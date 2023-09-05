@@ -1,52 +1,37 @@
-# Project Name
-> Outline a brief description of your project.
+# Loan Default Prediction Case Study
+![LC_logo](https://github.com/Shreyanthds/Lending_club/assets/115062429/854691d3-0e60-4ab9-b687-1086aa87acea)
 
+## Problem Statement
 
-## Table of Contents
-* [General Info](#general-information)
-* [Technologies Used](#technologies-used)
-* [Conclusions](#conclusions)
-* [Acknowledgements](#acknowledgements)
+### Introduction
+In this case study, we apply exploratory data analysis (EDA) techniques to develop a basic understanding of risk analytics in banking and financial services. We aim to understand how data is used to minimize the risk of losing money while lending to customers.
 
-<!-- You can include any other section that is pertinent to your problem -->
+### Business Understanding
+We work for a consumer finance company specializing in lending various types of loans to urban customers. When the company receives a loan application, it must make a decision for loan approval based on the applicant's profile.
 
-## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
+Two types of risks are associated with the bank's decision:
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+1. If the applicant is likely to repay the loan, not approving the loan results in a loss of business to the company.
 
-## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
+2. If the applicant is not likely to repay the loan, i.e., likely to default, approving the loan may lead to a financial loss for the company.
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+The provided data contains information about past loan applicants and whether they 'defaulted' or not. The goal is to identify patterns indicating if a person is likely to default, which can be used for taking actions such as denying the loan, reducing the loan amount, or lending to risky applicants at a higher interest rate.
 
+## Valuable Features for Portfolio and Risk Assessment
 
-## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
+This information is valuable for portfolio and risk assessment, helping the company make informed decisions regarding lending practices. Key features to consider include:
 
-<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
+1. `funded_amnt`: The initial loan amount funded by investors is a key factor. Higher loan amounts may pose higher default risk.
+2. `installment`: Monthly loan payments are crucial. Higher installments relative to income can strain borrowers, increasing default risk.
+3. `total_pymnt`: The total payment received indicates whether borrowers have met their obligations, impacting default assessment.
+4. `total_pymnt_inv`: Similar to total payment, this metric considers investor contributions, revealing the overall repayment performance.
+5. `total_rec_prncp`: The total principal received signifies how much of the loan amount has been repaid, influencing default predictions.
+6. `total_rec_int`: Total interest received reflects a borrower's commitment to loan repayment, affecting default assessments.
+7. `last_pymnt_amnt`: The latest payment amount indicates the borrower's current financial stability and potential for default.
+8. `revol_bal`: A high revolving balance may indicate financial stress, affecting the ability to repay loans and increasing default risk.
+9. `int_rate`: Interest rates impact affordability. Higher rates can strain borrowers, elevating the likelihood of default.
+10. `annual_inc`: Borrower income plays a critical role. Lower income levels relative to loan amount can raise default risk.
 
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
-
-
-## Contact
-Created by [@githubusername] - feel free to contact me!
-
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
+## Contributors
+- Shreyanth HG
+- Vignesh V
